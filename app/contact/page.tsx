@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { Mail, Phone, MapPin } from 'lucide-react'
+import { toast } from 'sonner'
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -15,7 +16,6 @@ export default function ContactSection() {
     message: ''
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
 
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -26,33 +26,37 @@ export default function ContactSection() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
-    setSubmitStatus('idle')
+    const {name,email,message} = formData;
 
+    if(!name || !email || !message){
+      toast.error('please fill out all the fields')
+      return
+    }
+    
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
-      })
+        const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+        })
 
-      if (!response.ok) {
-        throw new Error('Failed to submit form')
-      }
+        if (!response.ok) {
+            throw new Error('Failed to submit form')
+        }
 
-      const data = await response.json()
-      console.log('Response from server:', data)
-      
-      setSubmitStatus('success')
-      setFormData({ name: '', email: '', message: '' })
-      alert('Thank you for your message! I will get back to you soon.')
+        const data = await response.json()
+        console.log('Response from server:', data)
+        
+
+        toast.success("message sent successfully")
+        setFormData({ name: '', email: '', message: '' })
     } catch (error) {
-      console.error('Error submitting form:', error)
-      setSubmitStatus('error')
-      alert('Failed to send message. Please try again later.')
+        console.error('Error submitting form:', error)
+        toast.error("Failed to send message. Please try again.")
     } finally {
-      setIsSubmitting(false)
+        setIsSubmitting(false)
     }
   }
 
@@ -83,7 +87,8 @@ export default function ContactSection() {
                     <Textarea id="message" name="message" value={formData.message} onChange={handleChange} required />
                   </div>
                 </div>
-                <Button type="submit" className="mt-4 w-full">Send Message</Button>
+                {isSubmitting && <Button type="submit" className="mt-4 w-full" disabled>Sending...</Button>}
+                {!isSubmitting && <Button type="submit" className="mt-4 w-full">Send Message</Button>}
               </form>
             </CardContent>
           </Card>

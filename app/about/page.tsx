@@ -45,7 +45,7 @@ export default function AboutSection() {
 
                 <li><span className="text-xl">Freelance Web Developer, 2024-present</span></li>
                 <li><span className="text-xl">Web Development Intern, Reluhash.Ai, Summer 2024</span></li>
-                <li><span className="text-xl">Open Source Contributor, Various Projects, 2020-Present</span></li>
+                <li><span className="text-xl">Open Source Contributor, Various Projects, 2024-Present</span></li>
               </ul>
             </CardContent>
           </Card>

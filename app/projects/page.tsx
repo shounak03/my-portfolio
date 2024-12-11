@@ -1,8 +1,8 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Github, ExternalLink } from 'lucide-react'
-import Image from "next/image"
+import { Github } from 'lucide-react'
+
 
 export default function ProjectsSection() {
   const projects = [
@@ -27,15 +27,15 @@ export default function ProjectsSection() {
       description: "A tool that summarizes articles with the help pf AI. It uses llama3-8b model to generate accurate summaries. Got a url? get the summary, No url? Read the latest articles and get the summaries from our website.",
       image: "",
       tags: ["React.js", "fastapi","Llamaindex","GROQ","newsdata API", "Tailwind CSS"],
-      githubLink: "https://github.com/yourusername/weather-dashboard",
+      githubLink: "https://github.com/shounak03/Briefly",
       liveLink: "https://weather-dashboard-demo.netlify.app",
     },
     {
-      title: "Personal Blog",
-      description: "A minimalist blog platform with a custom CMS, SEO optimization, and responsive design.",
+      title: "Chat application",
+      description: "A simple realtime chat application. Create account, invite your friends, chat with them.",
       image: "/placeholder.svg?height=200&width=400",
-      tags: ["Gatsby", "GraphQL", "Netlify CMS", "Styled Components"],
-      githubLink: "https://github.com/yourusername/personal-blog",
+      tags: ["React", "javascript", "Firebase", "CSS"],
+      githubLink: "https://github.com/shounak03/realtime-chat-app/",
       liveLink: "https://your-blog-demo.com",
     },
   ]
@@ -47,16 +47,16 @@ export default function ProjectsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="flex flex-col">
-              <CardHeader>
+              {/* <CardHeader>
                 <Image
                   src={project.image}
                   alt={project.title}
-                  width={400}
+                  width={200}
                   height={200}
                   className="w-full h-48 object-cover rounded-t-lg"
                 />
-              </CardHeader>
-              <CardContent className="flex-grow">
+              </CardHeader> */}
+              <CardContent className="flex-grow mt-4">
                 <CardTitle className="text-xl font-semibold mb-2">{project.title}</CardTitle>
                 <CardDescription className="text-muted-foreground mb-4">{project.description}</CardDescription>
                 <div className="flex flex-wrap gap-2 mb-4">
