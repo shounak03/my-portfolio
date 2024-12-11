@@ -69,7 +69,7 @@ export default function ContactSection() {
           <Card>
             <CardHeader>
               <CardTitle>Get in Touch</CardTitle>
-              <CardDescription>Fill out the form and I'll get back to you as soon as possible.</CardDescription>
+              <CardDescription>Fill out the form and I&apos;ll get back to you as soon as possible.</CardDescription>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit}>
@@ -117,7 +117,7 @@ export default function ContactSection() {
             </CardContent>
             <CardFooter>
               <p className="text-sm text-muted-foreground">
-                I'm always open to new opportunities and collaborations. Don't hesitate to reach out!
+                I&apos;m always open to new opportunities and collaborations. Don&apos;t hesitate to reach out!
               </p>
             </CardFooter>
           </Card>
