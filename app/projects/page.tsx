@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Github } from 'lucide-react'
+import { ExternalLink, Github } from 'lucide-react'
 
 
 export default function ProjectsSection() {
@@ -12,7 +12,7 @@ export default function ProjectsSection() {
       image: "/muspace.png",
       tags: ["Next.js", "Typescript", "Posgresql", "prisma", "RestApi","Tailwind CSS" ,"Shadcn ui"],
       githubLink: "https://github.com/shounak03/muSpace-collaborative-music-listening-platform",
-    //   liveLink: "https://ecommerce-platform-demo.vercel.app",
+      liveLink: "https://mu-space-collaborative-music-listening-platform.vercel.app/",
     },
     {
       title: "eduCrate",
@@ -20,7 +20,7 @@ export default function ProjectsSection() {
       image: "/placeholder.svg?height=200&width=400",
       tags: ["Next.js", "Typescript", "MongoDB", "RestApi","Tailwind CSS", "Shadcn ui"],
       githubLink: "https://github.com/shounak03/eduCrate",
-      liveLink: "https://task-app-demo.vercel.app",
+      // liveLink: "https://task-app-demo.vercel.app",
     },
     {
       title: "Briefly",
@@ -28,7 +28,7 @@ export default function ProjectsSection() {
       image: "",
       tags: ["React.js", "fastapi","Llamaindex","GROQ","newsdata API", "Tailwind CSS"],
       githubLink: "https://github.com/shounak03/Briefly",
-      liveLink: "https://weather-dashboard-demo.netlify.app",
+      // liveLink: "https://weather-dashboard-demo.netlify.app",
     },
     {
       title: "Chat application",
@@ -36,7 +36,7 @@ export default function ProjectsSection() {
       image: "/placeholder.svg?height=200&width=400",
       tags: ["React", "javascript", "Firebase", "CSS"],
       githubLink: "https://github.com/shounak03/realtime-chat-app/",
-      liveLink: "https://your-blog-demo.com",
+      // liveLink: "https://your-blog-demo.com",
     },
   ]
 
@@ -72,12 +72,12 @@ export default function ProjectsSection() {
                     GitHub
                   </a>
                 </Button>
-                {/* <Button size="sm" asChild>
+                {project.liveLink && <Button size="sm" asChild>
                   <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Live Demo
                   </a>
-                </Button> */}
+                </Button>}
               </CardFooter>
             </Card>
           ))}
