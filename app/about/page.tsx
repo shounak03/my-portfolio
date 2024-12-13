@@ -29,7 +29,7 @@ export default function AboutSection() {
                     <li><span className="text-xl font-bold">Frontend</span>: <span className="text-xl">React, Next, Tailwind, UI</span> </li>
                     <li><span className="text-xl font-bold">Backend</span>:<span className="text-xl">  Node, Express, Nest, fastapi </span></li>
                     <li><span className="text-xl font-bold">Gen-AI tools</span>:<span className="text-xl">  OpenAI, Llamaindex, LangChain</span></li>
-                    <li><span className="text-xl font-bold">Databases</span>:<span className="text-xl">MongoDB, PostgreSQL, MySQL</span></li>
+                    <li><span className="text-xl font-bold">Databases</span>:<span className="text-xl"> MongoDB, PostgreSQL, MySQL</span></li>
                     <li><span className="text-xl font-bold">Tools</span>: <span className="text-xl"> Git, Docker, AWS, Vercel</span></li>
                 </ul>
             </CardContent>

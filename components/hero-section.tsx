@@ -24,7 +24,7 @@ export default function HeroSection() {
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-primary text-center md:text-left">Hello there,<br/> I&apos;m Shounak</h1>
             <p className="text-lg md:text-xl mb-6 text-muted-foreground text-center md:text-left">
               I&apos;m a passionate web developer with expertise in React, Next.js, and Node.js. 
-              I love creating beautiful, responsive, and user-friendly web applications.
+              I love creating full-stack, responsive and user-friendly web applications.
             </p>
             <div className="flex justify-center md:justify-start">
               <Button asChild>
