@@ -37,7 +37,7 @@ export default function MessagesSection() {
 
   const handleMarkAsRead = async (id: string) => {
     try {
-      const response = await fetch(`/api/messages/${id}`, {
+      const response = await fetch(`/api/messages/?id=${id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
