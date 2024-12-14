@@ -20,7 +20,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="https://x.com/codeAndRum" target="_blank" rel="noopener noreferrer" className="p-2 sm:p-4">
+              <Link href="https://x.com/dev_shounak" target="_blank" rel="noopener noreferrer" className="p-2 sm:p-4">
                 <BsTwitterX className="w-5 h-5 sm:w-6 sm:h-6" />
               </Link>
             </li>
