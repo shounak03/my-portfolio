@@ -105,10 +105,10 @@ export default function ContactSection() {
                         <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcRwQZwBBsBCbKlrbXDspjlpbkDwkmNcTfPvGJNLcKpqmnMwbQPGKRCtKrftVvwFcWccMgmJC" target='_blank'>shounakm03@gmail.com</a>
                     </span>
                 </div>
-                <div className="flex items-center space-x-2">
+                {/* <div className="flex items-center space-x-2">
                   <Phone className="text-primary" />
                   <span>+91 6204828332</span>
-                </div>
+                </div> */}
                 <div className="flex items-center space-x-2">
                   <MapPin className="text-primary" />
                   <span>Odisha, India</span>
