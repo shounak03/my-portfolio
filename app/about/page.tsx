@@ -10,7 +10,7 @@ export default function AboutSection() {
             <CardHeader>
               <CardTitle className="text-xl font-semibold text-primary">Education</CardTitle>
             </CardHeader>
-            <CardContent className="text-foreground max-h-64 overflow-y-auto">
+            <CardContent className="text-foreground max-h-64 overflow-y-auto dark:text-black">
               <p className="text-xl ">
                 I hold a Bachelor&apos;s degree in Computer Science from a Kalinga institute of industrial technology
                 University, where I honed my technical skills and gained a deep
@@ -24,7 +24,7 @@ export default function AboutSection() {
               <CardTitle className="text-xl font-semibold text-primary">Tech Stack</CardTitle>
             </CardHeader>
             <CardContent className="text-foreground max-h-64 overflow-y-auto">
-                <ul className="list-disc list-inside space-y-2">
+                <ul className="list-disc list-inside space-y-2 dark:text-black">
                     <li><span className="text-xl font-bold">Languages</span>: <span className="text-xl">JavaScript, TypeScript, Python, Solidity</span> </li>
                     <li><span className="text-xl font-bold">Frontend</span>: <span className="text-xl">React, Next, Tailwind, UI</span> </li>
                     <li><span className="text-xl font-bold">Backend</span>:<span className="text-xl">  Node, Express, Nest, fastapi </span></li>
@@ -41,7 +41,7 @@ export default function AboutSection() {
               <CardTitle className="text-xl font-semibold text-primary">Experience</CardTitle>
             </CardHeader>
             <CardContent className="text-foreground max-h-64 overflow-y-auto">
-              <ul className="list-disc list-inside space-y-2">
+              <ul className="list-disc list-inside space-y-2 dark:text-black">
 
                 <li><span className="text-xl">Freelance Web Developer, 2024-present</span></li>
                 <li><span className="text-xl">Web Development Intern, Reluhash.Ai, Summer 2024</span></li>
