@@ -12,9 +12,9 @@ export default function AboutSection() {
             </CardHeader>
             <CardContent className="text-foreground max-h-64 overflow-y-auto ">
               <p className="text-xl ">
-                I hold a Bachelor&apos;s degree in Computer Science from a Kalinga institute of industrial technology
-                University, where I honed my technical skills and gained a deep
-                understanding of computer systems and software development.
+                I am pursuing a Bachelor&apos;s degree in Computer Science from a Kalinga institute of industrial technology
+                University. I have a keen interest in web development and blockchain technology. I have been working on various
+                projects to enhance my skills and knowledge in these fields.
               </p>
             </CardContent>
           </Card>
