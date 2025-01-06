@@ -15,6 +15,14 @@ export default function ProjectsSection() {
       liveLink: "https://mu-space-collaborative-music-listening-platform.vercel.app/",
     },
     {
+      title: "AI Notes",
+      description: "It is an ai based note taking application. save your notes, generate summary and chat with your notes with our chat bot, Try it for free",
+      image: "/muspace.png",
+      tags: ["Next.js", "Typescript", "Supabase", "Rag", "Gemini", "Pgvector" ,"Shadcn","Vercel"],
+      githubLink: "https://ai-notes-ten.vercel.app/",
+      liveLink: "https://ai-notes-ten.vercel.app/",
+    },
+    {
       title: "eduCrate",
       description: "A resource sharing platform. Do you feel you have great resources and want a price for them? eduCrate is the place to find them. Create a profile, add your course, share resources in a structured way and sell them.",
       image: "/placeholder.svg?height=200&width=400",
@@ -30,14 +38,7 @@ export default function ProjectsSection() {
       githubLink: "https://github.com/shounak03/Briefly",
       // liveLink: "https://weather-dashboard-demo.netlify.app",
     },
-    {
-      title: "Chat application",
-      description: "A simple realtime chat application. Create account, invite your friends, chat with them.",
-      image: "/placeholder.svg?height=200&width=400",
-      tags: ["React", "javascript", "Firebase", "CSS"],
-      githubLink: "https://github.com/shounak03/realtime-chat-app/",
-      // liveLink: "https://your-blog-demo.com",
-    },
+    
   ]
 
   return (
