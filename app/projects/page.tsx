@@ -20,7 +20,7 @@ export default function ProjectsSection() {
       image: "/muspace.png",
       tags: ["Next.js", "Typescript", "Supabase", "Rag", "Gemini", "Pgvector" ,"Shadcn","Vercel"],
       githubLink: "https://ai-notes-ten.vercel.app/",
-      liveLink: "https://ai-notes-ten.vercel.app/",
+      liveLink: "https://ai-notes-v1.vercel.app/",
     },
     {
       title: "eduCrate",
