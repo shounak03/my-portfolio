@@ -15,6 +15,15 @@ export default function ProjectsSection() {
       liveLink: "https://mu-space-collaborative-music-listening-platform.vercel.app/",
     },
     {
+      title: "Yumm&Healthy",
+      description: "A recipe generation application that allows users to generate for recipes based on ingredients, dietary restrictions, and cuisine types. Users can also save their favorite recipes and genrate recipes for upcoming weeks.",
+      image: "",
+      tags: ["Nextjs", "Typescript","Gemini","Supabase","shadcn","Vercel"],
+      githubLink: "https://github.com/shounak03/YummAndHeathy-v1",
+      liveLink: "https://yumm-and-heathy-v1.vercel.app/",
+    },
+
+    {
       title: "AI Notes",
       description: "It is an ai based note taking application. save your notes, generate summary and chat with your notes with our chat bot, Try it for free",
       image: "/muspace.png",
@@ -29,14 +38,6 @@ export default function ProjectsSection() {
       tags: ["Next.js", "Typescript", "MongoDB", "RestApi","Tailwind", "Shadcn","Vercel"],
       githubLink: "https://github.com/shounak03/eduCrate",
       // liveLink: "https://task-app-demo.vercel.app",
-    },
-    {
-      title: "Briefly",
-      description: "A tool that summarizes articles with the help pf AI. It uses llama3-8b model to generate accurate summaries. Got a url? get the summary, No url? Read the latest articles and get the summaries from our website.",
-      image: "",
-      tags: ["React.js", "fastapi","Llamaindex","GROQ","newsdata API", "Tailwind CSS"],
-      githubLink: "https://github.com/shounak03/Briefly",
-      // liveLink: "https://weather-dashboard-demo.netlify.app",
     },
     
   ]

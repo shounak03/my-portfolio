@@ -24,7 +24,7 @@ export default function Appbar() {
                         <div className="flex gap-4">
                             <Link href="/contact" className="hover:text-purple-500 font-bold text-blue-700 px-4">Contact</Link>
                             <a 
-                                href="https://drive.google.com/file/d/1JWV4WzNQTYTCUFF-wHNsHNs6IC9SUfI3/view?usp=sharing"
+                                href="https://drive.google.com/file/d/11xLSgv-JMvhuu65wAbvDjzcLmbq8ciVX/view?usp=sharing"
                                 className="hover:text-purple-500 font-bold text-blue-700 px-4"
                                 target="_blank"
                                 rel="noopener noreferrer"
