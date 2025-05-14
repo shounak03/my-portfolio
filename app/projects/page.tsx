@@ -11,8 +11,8 @@ export default function ProjectsSection() {
       description: "A collaborative music listening platform that allows users to queue songs and next song is played based on their votes.",
       image: "/muspace.png",
       tags: ["Next.js", "Typescript", "Posgresql", "Prisma", "RestApi","Tailwind" ,"Shadcn","Vercel"],
-      githubLink: "https://github.com/shounak03/muSpace-collaborative-music-listening-platform",
-      liveLink: "https://mu-space-collaborative-music-listening-platform.vercel.app/",
+      githubLink: "https://github.com/shounak03/muSpace",
+      liveLink: "https://www.muspace.xyz/",
     },
     {
       title: "Yumm&Healthy",
