@@ -38,7 +38,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Appbar />
+          {/* <Appbar /> */}
           {children}
           <Footer />
           <Toaster />
